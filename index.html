@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>עורך קוד סורא</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <span id="line-numbers">1</span>
+  <div id="container">
+    <pre id="highlight"></pre>
+    <textarea id="code-editor" oninput="lineNumbers(this); autoComplete(this)" onscroll="syncScroll(this)" onkeydown="autoClose(event, this); handleTabCompletion(event)" wrap="off"></textarea>
+    <div id="autocomplete-list" class="autocomplete-list"></div>
+  </div>
+</body>
+</html>
