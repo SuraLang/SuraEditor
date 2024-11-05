@@ -45,6 +45,7 @@ body {
   overflow-y: hidden;
   padding: 5px;
   z-index: 2;
+  direction: rtl;
 }
 #line-numbers {
   color: #6e7681;
